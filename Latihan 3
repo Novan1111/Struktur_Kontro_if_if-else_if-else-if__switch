@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+import java.util.Scanner;
+/**
+ *
+ * @author LENOVO
+ */
+public class Latihan3 {
+ public static void main(String[] args) {
+    Scanner input = new Scanner (System.in);
+    
+    System.out.print("Masukan Nama Anda = ");
+    String Nama = input.next();
+    
+    System.out.print("Masukan Jenis Kelamin Anda = ");
+    String Jenis_Kelamin = input.next();
+    
+    System.out.print("Masukan Tinggi Badan Anda = ");
+    int tingi_badan = input.nextInt();
+    
+    if (Jenis_Kelamin == "Laki-Laki") {
+    }else if (tingi_badan > 170){
+        System.out.print("Selemat Anda Lulus");
+    }else{
+        System.out.print("Gagal");
+        
+        if(Jenis_Kelamin == "Perempuan"){
+        }else if (tingi_badan > 162){
+            System.out.print("Selamat Anda Lulus");
+        }else{
+            System.out.print("Anda Gagal");
+        }
+    }
+    }
+ }
